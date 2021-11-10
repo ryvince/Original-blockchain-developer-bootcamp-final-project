@@ -1,4 +1,6 @@
 # blockchain-developer-bootcamp-final-project
+//REFER TO 'PromptSolidityScaffolding.md for the updated info sent for Chapter 3; the Functions mapped out are current
+
  Repo for bootcamp final project
 
 Initial idea for final project:

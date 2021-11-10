@@ -106,7 +106,19 @@ Function newSnapshot()
       return balances[msg.sender];
 
 
+//Nov 9 updates
+*/
+  make function giveTokens (unit TknXy) early in registration of msg.sender address
+    emit 10 TknXy to msg.sender
+    //these 10 would be the governance / voting token that could be used to 'vote' on the contract polls
 
+    Function monthlyTokens (uint TknXy)
+      emit 7 TknXy // monthly distro of tokens to all NFT holders
+
+    Function registerVote() public State
+
+      //Register 
+  /*
 
 //Examples from Bootcamp:
 

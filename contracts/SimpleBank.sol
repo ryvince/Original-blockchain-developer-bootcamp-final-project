@@ -52,7 +52,11 @@ contract SimpleBank {
     // Typically, called when invalid data is sent
     // Added so ether sent to this contract is reverted if the contract fails
     // otherwise, the sender's money is transferred to contract
-    function fallback() external payable {
+    
+    
+    //function
+    //called this fallback previously will a 'function' keyword but received warning it wasn't really the fallback with the 'function' identifier specified
+     fallback() external payable {
         revert();
     }
 
@@ -104,7 +108,7 @@ contract SimpleBank {
     function withdraw(uint withdrawAmount) public returns (uint) {
 
       require (balances[msg.sender] >= withdrawAmount);
-      msg.sender.transfer(withdrawAmount);
+      // msg.sender.transfer(withdrawAmount);
       balances[msg.sender] = balances[msg.sender] - withdrawAmount;
       emit LogWithdrawal(msg.sender, withdrawAmount, balances[msg.sender]);
       return balances[msg.sender];

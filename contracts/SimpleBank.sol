@@ -56,7 +56,7 @@ contract SimpleBank {
     
     //function
     //called this fallback previously will a 'function' keyword but received warning it wasn't really the fallback with the 'function' identifier specified
-     fallback() external payable {
+     function fallback() external payable {
         revert();
     }
 
